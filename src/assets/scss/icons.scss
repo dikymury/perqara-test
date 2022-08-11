@@ -1,0 +1,49 @@
+@mixin size($val){
+  width: $val+px;
+  height: $val+px;
+}
+@mixin image($val) {
+  background-image: url($val);
+}
+.cicon{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include size(20);
+}
+.cicon-48{
+  @include size(48);
+}
+.cicon-35{
+  @include size(35);
+}
+.cicon-32{
+  @include size(32);
+}
+.cicon-24{
+  @include size(24);
+}
+.cicon-20{
+  @include size(20);
+}
+.cicon-camera{
+  @include image("@/assets/img/icons/camera.png");
+}
+.cicon-earth{
+  @include image("@/assets/img/icons/earth.png");
+}
+.cicon-keyboard{
+  @include image("@/assets/img/icons/keyboard.png");
+}
+.cicon-accessibility{
+  @include image("@/assets/img/icons/accessibility.png");
+}
+.cicon-search{
+  @include image("@/assets/img/icons/search.png");
+}
+.cicon-help{
+  @include image("@/assets/img/icons/help.png");
+}
+.cicon-feedback{
+  @include image("@/assets/img/icons/feedback.png");
+}
